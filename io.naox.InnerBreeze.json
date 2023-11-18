@@ -1,35 +1,35 @@
 {
-    "app-id": "io.naox.InnerBreeze",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
-    "sdk": "org.freedesktop.Sdk",
-    "finish-args": [
-        "--share=ipc",
-        "--share=network",
-        "--socket=wayland",
-        "--socket=fallback-x11",
-        "--device=dri"
-    ],
-    "command": "inner_breeze",
-    "modules": [
+  "app-id": "io.naox.InnerBreeze",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "23.08",
+  "sdk": "org.freedesktop.Sdk",
+  "finish-args": [
+    "--share=ipc",
+    "--share=network",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--device=dri"
+  ],
+  "command": "inner_breeze",
+  "modules": [
+    {
+      "name": "InnerBreeze",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.desktop /app/share/applications/io.naox.InnerBreeze.desktop",
+        "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
+        "install -Dpm644 metadata/flatpak/InnerBreeze.png /app/share/icons/hicolor/256x256/apps/io.naox.InnerBreeze.png",
+        "mv data lib inner_breeze /app/",
+        "mkdir -p /app/bin",
+        "ln -s /app/inner_breeze /app/bin/inner_breeze"
+      ],
+      "sources": [
         {
-            "name": "InnerBreeze",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.desktop /app/share/applications/io.naox.InnerBreeze.desktop",
-                "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
-                "install -Dpm644 metadata/flatpak/InnerBreeze.png /app/share/icons/hicolor/256x256/apps/io.naox.InnerBreeze.png",
-                "mv data lib inner_breeze /app/",
-                "mkdir -p /app/bin",
-                "ln -s /app/inner_breeze /app/bin/inner_breeze"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/naoxio/inner_breeze/releases/download/1.0.7/InnerBreeze-Linux-x86_64.tar.gz",
-                    "sha256": "363f4044e0a427eccaa46d86c84a7663c5fb257f2df6b3e961871a6badf52c7a"
-                }
-            ]
+          "type": "archive",
+          "url": "https://github.com/naoxio/inner_breeze/releases/download/1.0.9/InnerBreeze-Linux-x86_64.tar.gz",
+          "sha256": "4ee179ea934f15effbf6b7091a1b84b211964125c20444c4fb82701e3c88ec74"
         }
-    ]
+      ]
+    }
+  ]
 }
