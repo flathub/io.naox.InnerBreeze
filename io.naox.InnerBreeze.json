@@ -17,7 +17,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "install -Dpm644 snap/gui/io.naox.InnerBreeze.desktop /app/share/applications/io.naox.InnerBreeze.desktop",
-        "install -Dpm644 snap/local/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
+        "install -Dpm644 metadata/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
         "install -Dpm644 snap/gui/io.naox.InnerBreeze.png /app/share/icons/hicolor/256x256/apps/io.naox.InnerBreeze.png",
         "mv data lib inner_breeze /app/",
         "mkdir -p /app/bin",
@@ -26,8 +26,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/naoxio/inner_breeze/releases/download/1.2.3/InnerBreeze-Linux-x86_64.tar.gz",
-          "sha256": "152c0d967320dc5ea9b22afe04a73bf5db074e28261c283075c31fd2cde54fe9"
+          "url": "https://github.com/naoxio/inner_breeze/releases/download/1.2.5/InnerBreeze-Linux-x86_64.tar.gz",
+          "sha256": "b2dc8040dd78e9d4bfc0d8e94274440fa81d560fb7127d60786eb86e023db8c6"
         }
       ]
     }
