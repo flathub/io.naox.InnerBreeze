@@ -16,9 +16,9 @@
       "name": "InnerBreeze",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.desktop /app/share/applications/io.naox.InnerBreeze.desktop",
-        "install -Dpm644 metadata/flatpak/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
-        "install -Dpm644 metadata/flatpak/InnerBreeze.png /app/share/icons/hicolor/256x256/apps/io.naox.InnerBreeze.png",
+        "install -Dpm644 metadata/snap/io.naox.InnerBreeze.desktop /app/share/applications/io.naox.InnerBreeze.desktop",
+        "install -Dpm644 metadata/snap/io.naox.InnerBreeze.metainfo.xml /app/share/metainfo/io.naox.InnerBreeze.metainfo.xml",
+        "install -Dpm644 metadata/snap/io.naox.InnerBreeze.png /app/share/icons/hicolor/256x256/apps/io.naox.InnerBreeze.png",
         "mv data lib inner_breeze /app/",
         "mkdir -p /app/bin",
         "ln -s /app/inner_breeze /app/bin/inner_breeze"
