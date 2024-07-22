@@ -26,8 +26,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/naoxio/inner_breeze/releases/download/1.3.2/InnerBreeze-Linux-x86_64.tar.gz",
-          "sha256": "ed07a411dee407d0b1a98fc6637a689a1d69dd2327013bcdfe46170a2ce72e15"
+          "url": "https://github.com/naoxio/inner_breeze/releases/download/1.3.3/InnerBreeze-Linux-x86_64.tar.gz",
+          "sha256": "814130ab0d7451849064ee2865587f3cc736d33cde81767aa0c8c410cadf6851"
         }
       ]
     }
