@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 REPO="naoxio/inner_breeze"
 LATEST_TAG=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | jq -r .tag_name)
