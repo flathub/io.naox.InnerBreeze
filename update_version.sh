@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-REPO="naoxio/inner_breeze"
+REPO="naoxio/inbreeze"
 LATEST_TAG=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | jq -r .tag_name)
 echo "Latest tag: $LATEST_TAG"
 TAR_URL="https://github.com/$REPO/releases/download/$LATEST_TAG/InnerBreeze-Linux-x86_64.tar.gz"
